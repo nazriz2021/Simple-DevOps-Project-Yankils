@@ -13,7 +13,7 @@ RUN mv apache-tomcat-9.0.54/* /opt/tomcat
 EXPOSE 8080
 CMD ["/opt/tomcat/bin/catalina.sh", "run"]
 ---
-SIMPLE TOMCAT - Dcokerfile
+SIMPLE TOMCAT - Dockerfile
 
 FROM tomcat:latest
 RUN cp -R /usr/local/tomcat/webapps.dist/* /usr/local/tomcat/webapps
